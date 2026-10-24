@@ -1,0 +1,3 @@
+add_library(libSceAbstractYoutube SHARED EXCLUDE_FROM_ALL Export.cpp PendingExports.cpp)
+target_include_directories(libSceAbstractYoutube PRIVATE ${LIBS_INCLUDE_DIR})
+configure_windows_unwind(libSceAbstractYoutube)

@@ -1,4 +1,4 @@
-add_library(libScePosixForWebKit SHARED EXCLUDE_FROM_ALL Export.cpp Resolver.cpp Filesystem.cpp)
+add_library(libScePosixForWebKit SHARED EXCLUDE_FROM_ALL Export.cpp PendingExports.cpp Resolver.cpp Filesystem.cpp)
 target_include_directories(libScePosixForWebKit PRIVATE ${LIBS_INCLUDE_DIR})
 target_link_libraries(libScePosixForWebKit PRIVATE libSceNet)
 if(WIN32)
